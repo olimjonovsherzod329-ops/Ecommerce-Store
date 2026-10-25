@@ -18,11 +18,14 @@ body .navbar {
   height: 70px;
 }
 body .navbar .nav {
+  position: fixed;
   width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #020817;
+  z-index: 2;
 }
 body .navbar .nav .left-nav {
   width: 25%;
@@ -84,7 +87,10 @@ body .navbar .nav .right-nav .login-btn {
   height: 40px;
   border-radius: 7px;
 }
-body hr {
+body .chiziq {
+  position: fixed;
+  top: 70px;
+  width: 100%;
   border: none;
   height: 1px;
   background-color: #1E293B;
@@ -227,6 +233,31 @@ body .hero-section .product-card .cards .card-content .cart-btn {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+body .footer {
+  padding: 50px 0px;
+  background-color: #0D1526;
+  border-top: 1px solid #1E293B;
+}
+body .footer .footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .footer .footer-card .card1 .st {
+  font-size: 22px;
+  color: #fff;
+}
+body .footer .footer-card .card1 p {
+  color: #94A3B8;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+body .footer .footer-card .card1 .insta {
+  width: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
