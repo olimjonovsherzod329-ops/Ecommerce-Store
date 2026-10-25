@@ -142,16 +142,16 @@ body .hero-section .search-div .filter-btn {
   gap: 10px;
 }
 body .hero-section .product-card {
+  padding: 30px 0px;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 body .hero-section .product-card .cards {
   width: 100%;
   max-width: 324px;
-  padding: 15px;
+  height: 520px;
   box-sizing: border-box;
   background: #020817;
   border: 1px solid #263449;
@@ -172,8 +172,6 @@ body .hero-section .product-card .cards .card-img img {
   display: block;
 }
 body .hero-section .product-card .cards .card-img .like-btn {
-  width: 2px;
-  height: 2px;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -182,7 +180,7 @@ body .hero-section .product-card .cards .card-img .like-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #020817;
+  background: rgba(2, 8, 23, 0.7921568627);
   color: #fff;
   border: none;
   border-radius: 7px;
@@ -192,7 +190,7 @@ body .hero-section .product-card .cards .card-img .like-btn i {
   font-size: 19px;
 }
 body .hero-section .product-card .cards .card-content {
-  padding-top: 17px;
+  padding: 17px;
 }
 body .hero-section .product-card .cards .card-content p {
   margin: 0;
