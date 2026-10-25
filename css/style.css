@@ -141,5 +141,94 @@ body .hero-section .search-div .filter-btn {
   color: #fff;
   gap: 10px;
 }
+body .hero-section .product-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+body .hero-section .product-card .cards {
+  width: 100%;
+  max-width: 324px;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #020817;
+  border: 1px solid #263449;
+  border-radius: 9px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+body .hero-section .product-card .cards .card-img {
+  width: 100%;
+  height: 323px;
+  position: relative;
+  overflow: hidden;
+}
+body .hero-section .product-card .cards .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+body .hero-section .product-card .cards .card-img .like-btn {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #020817;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+body .hero-section .product-card .cards .card-img .like-btn i {
+  font-size: 19px;
+}
+body .hero-section .product-card .cards .card-content {
+  padding-top: 17px;
+}
+body .hero-section .product-card .cards .card-content p {
+  margin: 0;
+}
+body .hero-section .product-card .cards .card-content .title {
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 6px;
+}
+body .hero-section .product-card .cards .card-content .description {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 21px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+body .hero-section .product-card .cards .card-content .price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+body .hero-section .product-card .cards .card-content .cart-btn {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: #000;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
