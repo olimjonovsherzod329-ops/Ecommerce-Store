@@ -55,6 +55,38 @@ body{
                     }
                 }
             }
+            .right-nav{
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap:40px;
+                .sun-btn{
+                    background-color: #020817;
+                    border: none;
+                }
+                 .like-btn{
+                    background-color: #020817;
+                    border: none;
+                }
+                 .shopping-btn{
+                    background-color: #020817;
+                    border: none;
+                }
+                 .login-btn{
+                    width: 200px;
+                    background-color: #020817;
+                    border: none;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1px solid #1E293B;
+                    height: 40px;
+                    border-radius: 7px;
+                }
+
+            }
         }
 
     }
@@ -63,4 +95,5 @@ body{
         height: 1px;
         background-color: #1E293B;
     }
+    
 }

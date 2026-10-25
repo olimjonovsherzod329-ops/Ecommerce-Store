@@ -53,6 +53,37 @@ body .navbar .nav .left-nav .nav-menu .nav-item a {
   color: #fff;
   font-size: 16px;
 }
+body .navbar .nav .right-nav {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+body .navbar .nav .right-nav .sun-btn {
+  background-color: #020817;
+  border: none;
+}
+body .navbar .nav .right-nav .like-btn {
+  background-color: #020817;
+  border: none;
+}
+body .navbar .nav .right-nav .shopping-btn {
+  background-color: #020817;
+  border: none;
+}
+body .navbar .nav .right-nav .login-btn {
+  width: 200px;
+  background-color: #020817;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #1E293B;
+  height: 40px;
+  border-radius: 7px;
+}
 body hr {
   border: none;
   height: 1px;
