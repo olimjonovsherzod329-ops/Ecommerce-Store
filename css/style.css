@@ -204,7 +204,7 @@ body .hero-section .product-card .cards .card-img .like-btn {
   align-items: center;
   justify-content: center;
   background: rgba(2, 8, 23, 0.7921568627);
-  border: 1px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6666666667);
   border: none;
   border-radius: 7px;
   cursor: pointer;
