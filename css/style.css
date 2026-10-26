@@ -259,5 +259,66 @@ body .footer .footer-card .card1 .insta {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 50px;
 }
+body .footer .footer-card .card2 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card2 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card2 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card2 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card3 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card3 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card3 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card3 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card4 {
+  margin-top: -50px;
+}
+body .footer .footer-card .card4 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card4 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card4 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .footer hr {
+  width: 100%;
+  border: 1px solid #1E293B;
+}
+body .footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+body .footer .bottom p {
+  color: #94A3B8;
+}
 
 /*# sourceMappingURL=style.css.map */
