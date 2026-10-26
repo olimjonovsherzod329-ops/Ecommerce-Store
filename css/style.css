@@ -175,12 +175,24 @@ body .hero-section .product-card .cards .card-img {
   height: 323px;
   position: relative;
   overflow: hidden;
+  border-radius: 8px;
 }
 body .hero-section .product-card .cards .card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: filter 0.3s ease;
+}
+body .hero-section .product-card .cards .card-img::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5215686275);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
 }
 body .hero-section .product-card .cards .card-img .like-btn {
   position: absolute;
@@ -192,13 +204,46 @@ body .hero-section .product-card .cards .card-img .like-btn {
   align-items: center;
   justify-content: center;
   background: rgba(2, 8, 23, 0.7921568627);
+  border: 1px solid #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  z-index: 3;
+}
+body .hero-section .product-card .cards .card-img .card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -40%);
+  transition: 0.3s ease;
+  z-index: 2;
+}
+body .hero-section .product-card .cards .card-img .card-hover button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e293b;
   color: #fff;
   border: none;
   border-radius: 7px;
   cursor: pointer;
 }
-body .hero-section .product-card .cards .card-img .like-btn i {
-  font-size: 19px;
+body .hero-section .product-card .cards .card-img .card-hover button:hover {
+  background: #334155;
+}
+body .hero-section .product-card .cards .card-img:hover::before {
+  opacity: 1;
+}
+body .hero-section .product-card .cards .card-img:hover .card-hover {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%);
 }
 body .hero-section .product-card .cards .card-content {
   padding: 17px;
