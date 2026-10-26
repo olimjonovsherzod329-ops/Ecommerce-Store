@@ -99,5 +99,167 @@ body .chiziq {
   height: 1px;
   background-color: #1E293B;
 }
+body .login-div {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #020817;
+  color: #fff;
+  padding: 16px;
+}
+body .login-div .login {
+  width: 100%;
+  max-width: 480px;
+  padding: 24px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  background: #020817;
+}
+body .login-div .login h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+body .login-div .login > p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+body .login-div .login form .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+body .login-div .login form .input-group label {
+  font-size: 14px;
+  font-weight: 600;
+}
+body .login-div .login form .input-group input {
+  width: 100%;
+  height: 40px;
+  padding: 0 12px;
+  background: #020817;
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+body .login-div .login form .input-group input::placeholder {
+  color: #94a3b8;
+}
+body .login-div .login form .input-group input:focus {
+  border-color: #3b82f6;
+}
+body .login-div .login form .login-btn {
+  width: 100%;
+  height: 40px;
+  background: #3b82f6;
+  color: #020817;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+body .login-div .login form .register-text {
+  margin-top: 24px;
+  margin-bottom: 0;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+body .login-div .login form .register-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
+body .footer {
+  height: 370px;
+  padding: 50px 0px;
+  background-color: #0D1526;
+  border-top: 1px solid #1E293B;
+}
+body .footer .footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .footer .footer-card .card1 .st {
+  font-size: 22px;
+  color: #fff;
+}
+body .footer .footer-card .card1 p {
+  color: #94A3B8;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+body .footer .footer-card .card1 .insta {
+  width: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+body .footer .footer-card .card2 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card2 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card2 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card2 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card3 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card3 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card3 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card3 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card4 {
+  margin-top: -50px;
+}
+body .footer .footer-card .card4 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card4 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card4 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .footer hr {
+  width: 100%;
+  border: 1px solid #1E293B;
+}
+body .footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+body .footer .bottom p {
+  color: #94A3B8;
+}
 
 /*# sourceMappingURL=login.css.map */
