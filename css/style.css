@@ -66,17 +66,20 @@ body .navbar .nav .right-nav {
 body .navbar .nav .right-nav .sun-btn {
   background-color: #020817;
   border: none;
+  cursor: pointer;
 }
 body .navbar .nav .right-nav .like-btn {
   background-color: #020817;
   border: none;
+  cursor: pointer;
 }
 body .navbar .nav .right-nav .shopping-btn {
   background-color: #020817;
   border: none;
+  cursor: pointer;
 }
 body .navbar .nav .right-nav .login-btn {
-  width: 200px;
+  width: 100px;
   background-color: #020817;
   border: none;
   color: #fff;
@@ -86,6 +89,7 @@ body .navbar .nav .right-nav .login-btn {
   border: 1px solid #1E293B;
   height: 40px;
   border-radius: 7px;
+  cursor: pointer;
 }
 body .chiziq {
   position: fixed;
@@ -146,6 +150,7 @@ body .hero-section .search-div .filter-btn {
   border-radius: 6px;
   color: #fff;
   gap: 10px;
+  cursor: pointer;
 }
 body .hero-section .product-card {
   padding: 30px 0px;

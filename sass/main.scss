@@ -79,20 +79,23 @@ body {
                 .sun-btn {
                     background-color: #020817;
                     border: none;
+                    cursor: pointer;
                 }
 
                 .like-btn {
                     background-color: #020817;
                     border: none;
+                    cursor: pointer;
                 }
 
                 .shopping-btn {
                     background-color: #020817;
                     border: none;
+                    cursor: pointer;
                 }
 
                 .login-btn {
-                    width: 200px;
+                    width: 100px;
                     background-color: #020817;
                     border: none;
                     color: #fff;
@@ -102,6 +105,7 @@ body {
                     border: 1px solid #1E293B;
                     height: 40px;
                     border-radius: 7px;
+                    cursor: pointer;
                 }
 
             }
@@ -179,6 +183,7 @@ body {
                 border-radius: 6px;
                 color: #fff;
                 gap: 10px;
+                cursor: pointer;
             }
         }
 

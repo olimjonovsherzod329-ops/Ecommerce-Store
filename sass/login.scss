@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+body {
+    background-color: #020817;
+
+    .container {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .navbar {
+
+        width: 100%;
+        height: 70px;
+
+
+        .nav {
+            position: fixed;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #020817;
+            z-index: 2;
+
+
+
+            .left-nav {
+                width: 25%;
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .nav-logo {
+                    font-size: 27px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 600;
+                }
+
+                .nav-menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 30px;
+
+                    .nav-item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .right-nav {
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+
+                .sun-btn {
+                    background-color: #020817;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .like-btn {
+                    background-color: #020817;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .shopping-btn {
+                    background-color: #020817;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .login-btn {
+                    width: 100px;
+                    background-color: #020817;
+                    border: none;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    border: 1px solid #1E293B;
+                    height: 40px;
+                    border-radius: 7px;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+    }
+
+    .chiziq {
+        position: fixed;
+        top: 70px;
+        width: 100%;
+        border: none;
+        height: 1px;
+        background-color: #1E293B;
+
+    }
+}
