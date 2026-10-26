@@ -70,8 +70,3 @@ fetch(URL)
     });
 
 
-    const sun = document.querySelector('.sun-btn');
-
-    sun.addEventListener("click", () => {
-       document.body.style.backgroundColor = "#fff";
-    })
