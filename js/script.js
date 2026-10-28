@@ -1,7 +1,9 @@
 
 const productCardContainer = document.querySelector('.product-card');
-const URL = 'https://fakestoreapi.com/products';
+
 const body = document.querySelector('body')
+
+const URL = 'https://fakestoreapi.com/products';
 fetch(URL)
     .then(response => {
         if (!response.ok) {
