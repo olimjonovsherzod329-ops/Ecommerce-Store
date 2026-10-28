@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #020817;
+}
+body .container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+body .navbar {
+  width: 100%;
+  height: 70px;
+}
+body .navbar .nav {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #020817;
+  z-index: 2;
+}
+body .navbar .nav .left-nav {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .navbar .nav .left-nav .nav-logo {
+  font-size: 27px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+body .navbar .nav .left-nav .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+body .navbar .nav .left-nav .nav-menu .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+body .navbar .nav .left-nav .nav-menu .nav-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+body .navbar .nav .right-nav {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+body .navbar .nav .right-nav .sun-btn {
+  background-color: #020817;
+  border: none;
+  cursor: pointer;
+}
+body .navbar .nav .right-nav .like-btn {
+  background-color: #020817;
+  border: none;
+  cursor: pointer;
+}
+body .navbar .nav .right-nav .shopping-btn {
+  background-color: #020817;
+  border: none;
+  cursor: pointer;
+}
+body .navbar .nav .right-nav .login-btn {
+  width: 100px;
+  background-color: #020817;
+  border: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #1E293B;
+  height: 40px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+body .chiziq {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #1E293B;
+}
+
+/*# sourceMappingURL=like.css.map */

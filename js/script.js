@@ -1,20 +1,28 @@
 
 const productCardContainer = document.querySelector('.product-card');
 
-const body = document.querySelector('body')
+const body = document.querySelector('body');
+
+const loader = document.querySelector('#loader');
 
 const URL = 'https://fakestoreapi.com/products';
 
-;
+
+loader.innerHTML = `
+    <span class="spinner"></span>
+`;
 
 fetch(URL)
     .then(response => {
         if (!response.ok) {
-            throw new Error('Mahsulotlarni yuklashda xatolik!');
+            throw new Error('Ma’lumot yuklanmadi');
         }
+
         return response.json();
     })
     .then(data => {
+        console.log(data);
+
         productCardContainer.innerHTML = data.map(item => {
             const { title, description, price, image } = item;
 
@@ -24,12 +32,12 @@ fetch(URL)
                         <img src="${image}" alt="${title}">
 
                         <button class="like-btn" type="button" aria-label="Like">
-                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24" fill="#fff">
-                        <path
-                            d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853ZM18.827 6.1701C17.3279 4.66794 14.9076 4.60701 13.337 6.01687L12.0019 7.21524L10.6661 6.01781C9.09098 4.60597 6.67506 4.66808 5.17157 6.17157C3.68183 7.66131 3.60704 10.0473 4.97993 11.6232L11.9999 18.6543L19.0201 11.6232C20.3935 10.0467 20.319 7.66525 18.827 6.1701Z">
-                        </path>
-                    </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                viewBox="0 0 24 24" fill="#fff">
+                                <path
+                                    d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853ZM18.827 6.1701C17.3279 4.66794 14.9076 4.60701 13.337 6.01687L12.0019 7.21524L10.6661 6.01781C9.09098 4.60597 6.67506 4.66808 5.17157 6.17157C3.68183 7.66131 3.60704 10.0473 4.97993 11.6232L11.9999 18.6543L19.0201 11.6232C20.3935 10.0467 20.319 7.66525 18.827 6.1701Z">
+                                </path>
+                            </svg>
                         </button>
 
                         <div class="card-hover">
@@ -68,9 +76,12 @@ fetch(URL)
             `;
         }).join('');
 
+        // Mahsulotlar kelgach loading yo‘qoladi
+        loader.style.display = 'none';
     })
     .catch(error => {
         console.error(error);
-    })
 
-
+        loader.innerHTML = 'Mahsulotlarni yuklashda xatolik yuz berdi!';
+        loader.style.color = '#ef4444';
+    });
