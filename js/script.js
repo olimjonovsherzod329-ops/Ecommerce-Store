@@ -4,6 +4,9 @@ const productCardContainer = document.querySelector('.product-card');
 const body = document.querySelector('body')
 
 const URL = 'https://fakestoreapi.com/products';
+
+;
+
 fetch(URL)
     .then(response => {
         if (!response.ok) {
@@ -64,11 +67,10 @@ fetch(URL)
                 </div>
             `;
         }).join('');
+
     })
     .catch(error => {
         console.error(error);
-        productCardContainer.innerHTML =
-            '<p style="color: white;">Mahsulotlarni yuklab bo‘lmadi.</p>';
-    });
+    })
 
 
