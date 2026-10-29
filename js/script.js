@@ -4,7 +4,7 @@ import {
     body,
     loader,
     URL
-} from './product.js';
+} from './products.js';
 
 loader.innerHTML = `
     <span class="spinner"></span>
