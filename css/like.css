@@ -7,6 +7,9 @@
 
 body {
   background-color: #020817;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body .container {
   max-width: 1400px;
@@ -98,6 +101,117 @@ body .chiziq {
   border: none;
   height: 1px;
   background-color: #1E293B;
+}
+body .cart {
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+body .cart h1 {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 25px;
+}
+body .cart p {
+  color: #94A3B8;
+  margin: 15px 0 33px 0;
+  font-size: 17px;
+}
+body .cart a button {
+  width: 170px;
+  height: 45px;
+  background-color: #3B82F6;
+  color: #0F172A;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+}
+body .footer {
+  padding: 50px 0px;
+  background-color: #0D1526;
+  border-top: 1px solid #1E293B;
+  margin-top: auto;
+}
+body .footer .footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .footer .footer-card .card1 .st {
+  font-size: 22px;
+  color: #fff;
+}
+body .footer .footer-card .card1 p {
+  color: #94A3B8;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+body .footer .footer-card .card1 .insta {
+  width: 160px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 50px;
+}
+body .footer .footer-card .card2 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card2 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card2 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card2 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card3 {
+  margin-top: -45px;
+}
+body .footer .footer-card .card3 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card3 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card3 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+}
+body .footer .footer-card .card4 {
+  margin-top: -50px;
+}
+body .footer .footer-card .card4 .st {
+  color: #fff;
+  font-size: 22px;
+}
+body .footer .footer-card .card4 .p {
+  padding-top: 20px;
+}
+body .footer .footer-card .card4 p {
+  color: #94A3B8;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .footer hr {
+  width: 100%;
+  border: 1px solid #1E293B;
+}
+body .footer .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+body .footer .bottom p {
+  color: #94A3B8;
 }
 
 /*# sourceMappingURL=like.css.map */
