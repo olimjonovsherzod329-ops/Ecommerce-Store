@@ -19,18 +19,27 @@ fetch(URL)
         return response.json();
     })
     .then(data => {
-        console.log(data);
-
         productCardContainer.innerHTML = data.map(item => {
-            const { title, description, price, image } = item;
-
             return `
                 <div class="cards">
                     <div class="card-img">
-                        <img src="${image}" alt="${title}">
+                        <img src="${item.image}" alt="${item.title}">
 
-                        <button class="like-btn" type="button" aria-label="Like">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="heart" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" width="19px">
+                        <button
+                            class="like-btn"
+                            type="button"
+                            aria-label="Like"
+                            data-id="${item.id}"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="heart"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="white"
+                                stroke-width="2"
+                                width="19px"
+                            >
                                 <path d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"></path>
                             </svg>
                         </button>
@@ -62,9 +71,9 @@ fetch(URL)
                     </div>
 
                     <div class="card-content">
-                        <p class="title">${title}</p>
-                        <p class="description">${description}</p>
-                        <p class="price">$${Number(price).toFixed(2)}</p>
+                        <p class="title">${item.title}</p>
+                        <p class="description">${item.description}</p>
+                        <p class="price">$${Number(item.price).toFixed(2)}</p>
                         <button class="cart-btn" type="button">Add to Cart</button>
                     </div>
                 </div>
@@ -73,17 +82,50 @@ fetch(URL)
 
         const likeBtns = document.querySelectorAll('.like-btn');
 
-        likeBtns.forEach((likeBtn) => {
-            likeBtn.addEventListener("click", () => {
-                const heart = likeBtn.querySelector(".heart");
+        let likedProducts = JSON.parse(
+            localStorage.getItem('likedProducts')
+        ) || [];
 
-                if (heart.style.fill === "red") {
-                    heart.style.fill = "none";
-                    heart.style.stroke = "white";
+        likeBtns.forEach(likeBtn => {
+            const heart = likeBtn.querySelector('.heart');
+            const id = Number(likeBtn.dataset.id);
+
+            const isLiked = likedProducts.some(
+                product => product.id === id
+            );
+
+            if (isLiked) {
+                heart.style.fill = 'red';
+                heart.style.stroke = 'red';
+            }
+
+            likeBtn.addEventListener('click', () => {
+                const alreadyLiked = likedProducts.some(
+                    product => product.id === id
+                );
+
+                if (alreadyLiked) {
+                    likedProducts = likedProducts.filter(
+                        product => product.id !== id
+                    );
+
+                    heart.style.fill = 'none';
+                    heart.style.stroke = 'white';
                 } else {
-                    heart.style.fill = "red";
-                    heart.style.stroke = "red";
+                    const product = data.find(
+                        item => item.id === id
+                    );
+
+                    likedProducts.push(product);
+
+                    heart.style.fill = 'red';
+                    heart.style.stroke = 'red';
                 }
+
+                localStorage.setItem(
+                    'likedProducts',
+                    JSON.stringify(likedProducts)
+                );
             });
         });
 

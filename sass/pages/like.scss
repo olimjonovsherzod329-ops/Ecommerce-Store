@@ -85,10 +85,13 @@ body {
                     cursor: pointer;
                 }
 
-                .like-btn {
-                    background-color: #020817;
-                    border: none;
-                    cursor: pointer;
+                a {
+                    .like-btn-nav {
+                        background-color: #020817;
+                        border: none;
+                        cursor: pointer;
+                    }
+
                 }
 
                 .shopping-btn {
@@ -124,24 +127,28 @@ body {
         height: 1px;
         background-color: #1E293B;
     }
-    .cart{
+
+    .cart {
         margin: 0 auto;
         margin-top: 50px;
         text-align: center;
-        h1{
+
+        h1 {
             margin-top: 20px;
             color: #fff;
             font-size: 25px;
 
         }
-        p{
+
+        p {
             color: #94A3B8;
             margin: 15px 0 33px 0;
-            
+
             font-size: 17px;
         }
-        a{
-            button{
+
+        a {
+            button {
                 width: 170px;
                 height: 45px;
                 background-color: #3B82F6;
